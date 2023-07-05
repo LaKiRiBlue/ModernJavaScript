@@ -114,11 +114,3 @@ searchBar.addEventListener('keyup', (event) => {
 });
 
 
- // imageBox.innerHTML= `
-                            // <div class="imgBx">
-                            
-                            // <img src="></>
-                            
-                            
-                            // </div>
-                            // `
