@@ -36,20 +36,21 @@ searchBar.addEventListener('keyup', (event) => {
 
                         // Looping through 5 days of weather data
                         for(let i = 0; i < 5; i++) {
-
-                            // Use the remainder operator (%) to switch from saturday (last in array) back to sunday (first in array)
+                          // Use the remainder operator (%) to switch from saturday (last in array) back to sunday (first in array)
                             const date = new Date();
                             let dayOfTheWeek = weekdays[(date.getDay() + i) % 7];
                             const data = result.list[i];
-                            console.log(data)
-
-                            // Create the elements with Data
+                            console.log(data) 
+                           // Create the elements with Data
                             const card = document.createElement('div');
                             card.classList.add("card");
-                            container.appendChild(card);
+                            container.appendChild(card); 
 
                             const imageBox = document.createElement('div');
                             imageBox.classList.add("imgBx");
+                            card.appendChild(imageBox);
+
+                           
                             card.appendChild(imageBox);
 
                             const cardImg = document.createElement('img');
@@ -111,3 +112,13 @@ searchBar.addEventListener('keyup', (event) => {
             });
     };
 });
+
+
+ // imageBox.innerHTML= `
+                            // <div class="imgBx">
+                            
+                            // <img src="></>
+                            
+                            
+                            // </div>
+                            // `
