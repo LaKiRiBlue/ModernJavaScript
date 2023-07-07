@@ -1,5 +1,5 @@
-import { clearContainer, fetchWeatherData, createWeatherCard, processWeatherData } from "./utils.js";
-import Data from "./config.js";
+import { clearContainer, fetchWeatherData, createWeatherCard, processWeatherData } from "./utils.mjs";
+import Data from "./config.mjs";
 
 const searchBar = document.querySelector('#searchBar');
 const container = document.querySelector(".container");
