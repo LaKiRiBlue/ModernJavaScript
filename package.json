@@ -1,0 +1,26 @@
+{
+  "name": "ModernJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^5.88.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaKiRiBlue/ModernJavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaKiRiBlue/ModernJavaScript/issues"
+  },
+  "homepage": "https://github.com/LaKiRiBlue/ModernJavaScript#readme"
+}
