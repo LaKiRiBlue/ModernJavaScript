@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,6 +10,10 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'deploy'),
   
+  },
+  devServer: {
+    contentBase: './deploy',
+    open: true
   },
 
   devServer: {
@@ -28,7 +33,12 @@ module.exports = {
           options: {
             presets: ["@babel/preset-env"],
           },
+        
         },
+      },
+      { 
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -36,6 +46,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Webpack Output",
     }),
+    new CleanWebpackPlugin()
   ],
   mode:'development' , 
 }
